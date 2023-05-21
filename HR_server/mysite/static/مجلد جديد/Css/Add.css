@@ -1,0 +1,30 @@
+
+form
+{
+    border: solid black;
+    margin-top: 20px;
+    padding: 10px;
+    width:1000px;
+    margin-left: 100px;
+    height:auto;
+    background-color:rgb(251, 247, 240);
+}
+
+body
+{
+    
+    background-color: #FFF0E5;
+}
+#button
+{
+    float: right;
+    background-color:#8a333e;
+    color: white;
+    margin-bottom:15px;
+}
+
+.result
+{
+    color: darkred;
+    font-size: 14px;
+}

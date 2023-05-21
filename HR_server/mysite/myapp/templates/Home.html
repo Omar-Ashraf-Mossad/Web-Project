@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  {%load static%}
+  <meta charset="UTF-8"/>
+
+     <title>HR Homepage</title>
+     <link rel="stylesheet" href="{% static 'Css/navigation.css'%}">
+     <link rel="stylesheet" href="{% static 'Css/homepage.css'%}">
+     
+     <script language="JavaScript" src="{% static 'java script/Search.js'%}">
+    </script>
+     
+ 
+
+ </head>
+
+ <body>
+   
+
+<video autoplay muted loop id="Video" >
+    <source src="{% static 'video/mixkit-open-office-space-914.mp4'%}" type="video/mp4">
+  </video>
+
+
+
+  <div class="tex_shape">
+
+
+
+    <ul>
+        <li class="Mark"><a href="{% url 'Home'%}" target="_self">Home</a> </li>
+        <li><a href="{% url 'Add'%}" target="_self">Add</a> </li>
+        <li><a href="{% url 'Edit'%}" target="_self">Edit</a> </li>
+        <li><a href="{% url 'Delete'%}" target="_self">Delete</a> </li>
+        <li><a href="{% url 'Vacations'%}" target="_self">Vacations</a> </li>
+        
+        
+        <br>
+        <li  class="search">
+            <input type="text" id="search" size="20" maxlength="40" name="name" placeholder="Search an employee.." required>
+                <input type="image" src="{% static 'Images/icon.jpg'%}" onclick="set_searchitem()" width="22px" height="19px" class="searchbutton"  >
+             <br />
+      
+
+       </li>
+    </ul>
+
+    <h1>Welcome to HR site</h1>
+    <p>our message is to help every body</p>
+
+
+  </div>  
+     
+     
+
+     
+     
+     
+ </body>
+</html>

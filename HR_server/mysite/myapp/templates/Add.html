@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8"/>
+
+        {%load static%}
+        <title> Add </title>
+        <link rel= "stylesheet" href="{% static 'Css/navigation.css'%}">
+        <link rel= "stylesheet" href="{% static 'Css/Add.css'%}">
+        <link rel= "stylesheet" href="{% static 'Css/Status.css'%}">
+        <script src="{% static 'Java script/Validation.js'%}"></script>
+        <script language="JavaScript" src="{% static 'java script/Search.js'%}"> </script>
+        <script language="JavaScript" src="{% static 'java script/add.js'%}"> </script>
+        
+    </head>
+
+
+</head>
+<body onload=""> 
+
+    <ul>
+        <li ><a href="{%url 'Home'%}" target="_self">Home</a>                 </li>
+        <li class="Mark"><a href="{%url 'Add'%}" target="_self">Add</a>       </li>
+        <li><a href="{%url 'Edit'%}" target="_self">Edit</a>                  </li>
+        <li><a href="{%url 'Delete'%}" target="_self">Delete</a>              </li>
+        <li><a href="{%url 'Vacations'%}" target="_self">Vacations</a>        </li>
+        <br>
+        <li  class="search">
+            <input type="text" id="search" size="20" maxlength="40" name="name" placeholder="Search an employee.." required>
+                <input type="image" src="{% static 'Images/icon.jpg'%}" onclick="set_searchitem()" width="22px" height="19px" class="searchbutton"  >
+            <br />
+        </li>
+    </ul>
+<br>
+
+
+
+
+
+
+<h1 class="center"> Add a new Employee</h1>
+<div id="status"></div>
+<form class="form" method="post">
+
+    
+        <br><br>
+
+        Name: &puncsp; <input type="text" id="ename" placeholder="Enter the name of the employee.." > 
+        <span class="result"></span> <br><br>
+
+        ID:     <input type="number" id="id" placeholder="Enter the id number.." > 
+        <span class="result"></span> <br><br>
+        
+        Email : &puncsp;     <input type="email" id="email" placeholder="Enter the email.." > 
+        <span class="result"></span> <br><br>
+        
+        address : &puncsp;     <input type="text" id="eaddress" placeholder="Enter the address.." > 
+        <span class="result"></span> <br><br>
+        
+    
+        number:   <input type="number" id="phone" placeholder="Enter the phone number.." > 
+        <span class="result"></span> <br>
+        
+        <br>
+        Gender :         <select name="Gender" id="gender">
+    
+            <option>male </option>
+            <option>female </option>
+        </select>
+    
+
+    
+        status:           <select name="status" id="s">
+    
+            <option>engaged  </option>
+            <option>single  </option>
+            <option> married</option>
+            <option> divorced</option>
+        </select>
+    
+    
+    
+        <br><br>
+    
+        <label>Number of  vacation days </label>
+        <input type="number" id="vacation" name="num" placeholder="enter number of days taken as a vacation.." >
+        <span class="result"></span> <br>
+        <br>
+    
+        <label>salary: </label>
+        <input type="number" id="salary" name="num" placeholder="input the salary you want to give.." >
+        <span class="result"></span> <br>
+        <br>
+    
+        <label>Date of Birth </label>
+        <input type="date" id="date" >
+        <span class="result"></span> <br><br>
+    
+        <br>
+    
+        <input id="button" type="submit" onclick="return add_data()" value="Add">
+        <br>
+
+</form>
+
+<br><br>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>

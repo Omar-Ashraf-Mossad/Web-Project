@@ -1,0 +1,59 @@
+<!Doctype html>
+<html>
+
+    <head>
+        {%load static%}
+        <title>HR Homepage</title>
+        <link rel="stylesheet" href="{% static 'Css/navigation.css'%}">
+        <link rel="stylesheet" href="{% static 'Css/table.css'%}">
+        <link rel="stylesheet" href="{% static 'Css/button colors.css'%}">
+        <link rel="stylesheet" href="{% static 'Css/search_result.css'%}">
+        
+        
+        
+        <script language="JavaScript" src="{% static 'java script/Search.js'%}">
+        </script>
+        <script language="JavaScript" src="{% static 'java script/request_handle.js'%}">
+        </script>
+   
+    </head>
+   
+    <body onload="check()">
+   
+   
+       <ul>
+           <li class="Mark"><a href="{%url 'Home'%}" target="_self">Home</a> </li>
+           <li><a href="{%url 'Add'%}" target="_self">Add</a> </li>
+           <li><a href="{%url 'Edit'%}" target="_self">Edit</a> </li>
+           <li><a href="{%url 'Delete'%}" target="_self">Delete</a> </li>
+           <li><a href="{%url 'Vacations'%}" target="_self">Vacations</a> </li>
+           
+     <br>
+           <li  class="search">
+            <input type="text" id="search" size="20" maxlength="40" name="name" placeholder="Search an employee.." required>
+                <input type="image" src="{% static 'Images/icon.jpg'%}" onclick="set_searchitem()" width="22px" height="19px" class="searchbutton"  >
+             <br />
+           </li>
+    </ul>
+ 
+       <br>
+       <p class="center"> <strong>You searched for: </strong><span id = "result"></span> </p>
+       <div id="fail"></div>
+       <br>
+       <h1>Search Result:</h1> 
+       <br>
+       <table id="table" >
+
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+
+        </tr>
+        
+        
+       </table>
+
+
+    </body>
+
+</html>

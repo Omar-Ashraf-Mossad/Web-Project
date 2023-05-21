@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    {%load static%}
+    <meta charset="UTF-8"/>
+    <meta name="description" content="HR website" />
+    <title> Update </title>
+    <link rel="stylesheet" href="{% static 'Css/navigation.css'%}">
+    <link rel="stylesheet"  href="{% static 'Css/edit.css'%}">    
+    <link rel= "stylesheet" href="{% static 'Css/Status.css'%}">
+    <script language="JavaScript" src="{% static 'java script/Edit.js'%}">
+        
+    </script>
+    <script language="JavaScript" src="{% static 'java script/Validation.js'%}">
+        
+    </script>
+    <script language="JavaScript" src="{% static 'java script/Search.js'%}">
+    </script>
+    
+</head>
+<body onload="">
+
+    <ul>
+        <li ><a href="{%url 'Home'%}" target="_self">Home</a> </li>
+        <li ><a href="{%url 'Add'%}" target="_self">Add</a> </li>
+        <li><a href="{%url 'Edit'%}" target="_self" class="Mark">Edit</a> </li>
+        <li><a href="{%url 'Delete'%}" target="_self">Delete</a> </li>
+        <li><a href="{%url 'Vacations'%}" target="_self" >Vacations</a> </li>
+        
+        
+        <br>
+        <li  class="search">
+            <input type="text" id="search" size="20" maxlength="40" name="name" placeholder="Search an employee.." required>
+                <input type="image" src="{% static 'Images/icon.jpg'%}" onclick="set_searchitem()" width="22px" height="19px" class="searchbutton";  >
+             <br />
+      
+
+       </li>
+    </ul>
+     
+    <h1 class="center" >Update employee information   </h1>
+    <div id="status"></div>
+
+        <div class="ID"  > ID:</div>
+      <input type='number'id="Id" name='myInput' placeholder='Enter Id number Here' >  <span class="result"></span>
+      <button onclick=" search_edit()"  >Search</button>
+     
+    
+ 
+    <form name="edit form" id="form">
+
+    <div name="Name">Name:</div>
+    <input type='text' id="ename" class="myinput" placeholder='Enter Text Here'  disabled/>  
+    <span class="result"></span>
+
+    <div name="id">Id:</div>
+    <input type='text' id="id" placeholder='Enter Text Here'  disabled/>  
+    <span class="result"></span>
+
+    <div name="Email">Email:</div>
+    <input type='email' id="email" class="myinput"  placeholder='Enter Text Here'  disabled/>  
+    <span class="result"></span> 
+
+    <div name="Address">Address:</div>
+    <input type='text' id="eaddress" class="myinput" placeholder='Enter Text Here'  disabled/>  
+    <span class="result"></span> 
+
+    <div name="Phone number">Phone number:</div>
+
+    <input type='number' name='phone' id="phone" class="myinput" placeholder='Enter Text Here'  disabled/> 
+    <span class="result"></span> 
+
+    Gender :         <select class="myinput"  id="gender"  disabled>
+
+        <option>male </option>
+        <option>female </option>
+    </select>
+
+    status:           <select class="myinput"id="s" name="status"  disabled>
+
+        <option>engaged  </option>
+        <option>single  </option>
+        <option> married</option>
+        <option> divorced</option>
+        
+     </select> 
+    <div name="number of available vacation days">number of available vacation days:</div>
+    <input type='number' class="myinput" id="available_days" name='num' placeholder='Enter Text Here'  disabled/>  
+    <span class="result"></span> 
+
+    <div >number of actual approved
+    vacation days:</div>
+
+    <input type='number' class="myinput" id="actual_days" name='num' placeholder='Enter Text Here'  disabled/>  
+    <span class="result"></span> 
+    <div >Salary:</div>
+
+    <input type='number' name='num' id="salary" class="myinput" placeholder='Enter Text Here'  disabled/>  
+    <span class="result"></span>
+    <div >Date of birth:</div>
+
+    <input type='date' id="date" class="myinput" disabled/> 
+    <span class="result"></span> 
+    <br><br> <br><br>
+    <input type='button'  onclick="enable_edit()"  class="button" id="button1"  value='Edit info' disabled/> 
+   
+    <button id="button2" onclick="return edit()" disabled>Save changes</button>
+    <br>
+    <br>
+</form>
+</body>
+</html> 
+
+
+

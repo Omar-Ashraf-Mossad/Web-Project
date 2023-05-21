@@ -1,0 +1,29 @@
+.pad
+{
+    border: solid black;
+    margin-left: 300px;
+    border-width:3px ;
+    background-color:rgb(251, 247, 240);
+    width: 550px;
+    padding: 15px;
+    padding-left: 200px;
+}
+#pading
+{
+    padding: 5px;
+}
+body
+{
+    background-color:#FFF0E5;
+    padding:10px;
+}
+.result
+{
+    color: darkred;
+    font-size: 14px;
+}
+span
+{
+    color:rgb(40, 67, 156);
+    font-size: large;
+}

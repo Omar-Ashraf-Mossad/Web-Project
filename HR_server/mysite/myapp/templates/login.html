@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {%load static%}
+    <meta charset="UTF-8"/>
+
+    <title>  login page  </title>
+    <link rel="stylesheet" href="{% static 'Css/navigation.css'%}">
+    <script src="{% static 'Java script/login.js'%}"></script>
+    <link rel= "stylesheet" href="{% static 'Css/login.css'%}">
+    
+    <link rel="stylesheet" href="{% static 'Css/background.css'%}">
+       
+    
+  
+
+</head>
+
+<body>
+    
+
+   <center> <img src="{% static 'images/avatar.jpg'%}" width="200" height="200" class="imag"  > </center>
+    <br><br>
+    <center>
+        <div>
+
+       <form   id="form"  method="post">
+            <table style="text-align: center;color:#1d0101 ;" >
+                <tr>
+                  
+
+                 <td>
+                    Name: 
+
+                 </td>
+
+                    <td>
+    
+                        <input type="text" name="user"   required >
+
+                     </td>
+
+
+                </tr>
+
+         <tr>
+                  <td>
+                      ID:
+                  </td>
+
+                  <td>
+                       <input type="number" id="id"  required > 
+
+                  </td>
+
+            </tr>
+            
+            <tr>
+                 <td>
+                   password: 
+                 </td>
+                   
+                 <td>
+                     <input type="password"  name="pass"    required>
+                 </td>
+            </tr>
+            <tr>
+                <br><br>
+                <td colspan="2" rowspan="2">
+                    <br>
+                 <a href="{%url 'Home'%}" target="_self"> 
+                     <input type="button" onclick="return both_func()"  value="login"  class="log"  >  
+                    </a>
+                    <img src="{% static 'images/152533.png'%}" width="20" height="20">
+                </td>
+            </tr>
+
+
+            </table>
+        </center>
+        <br><br>
+    </div>
+
+   
+
+
+
+
+    
+    
+
+
+    
+
+    
+</body>
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,38 @@
+ul{
+    list-style-type: none;
+    margin:0 ;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+li a:hover{
+    background-color: #8a333e;
+}
+li{
+
+    float:left;
+}
+li a,li form{
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+.Mark
+{
+    background-color: #8a333e;
+}
+.search
+{
+    float:right;
+    margin-right: 10px;
+}
+.search .searchbutton
+{
+    vertical-align:middle;
+}
+.center
+{
+    text-align: center; font-size:400%;
+}

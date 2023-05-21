@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    {%load static%}
+    <meta charset="UTF-8"/>
+    <meta name="description" content="HR website" />
+    <title>  Delete </title>
+    <link rel="stylesheet" href="{% static 'Css/navigation.css'%}">
+    <link rel="stylesheet" href="{% static 'Css/button colors.css'%}">
+    <link rel= "stylesheet" href="{% static 'Css/Status.css'%}">
+    <link rel="stylesheet" href="{% static 'Css/Delete.css'%}">
+
+    <script language="JavaScript" src="{% static 'java script/Validation.js'%}"></script>
+    <script language="JavaScript" src="{% static 'java script/Search.js'%}"></script>
+    <script language="JavaScript" src="{% static 'java script/request_handle.js'%}"></script>
+    <script language="JavaScript" src="{% static 'java script/delete.js'%}"></script>
+</head>
+<body onload="">
+
+    <ul>
+        <li ><a href="{%url 'Home'%}" target="_self">Home</a> </li>
+        <li ><a href="{%url 'Add'%}" target="_self">Add</a> </li>
+        <li><a href="{%url 'Edit'%}" target="_self" >Edit</a> </li>
+        <li><a href="{%url 'Delete'%}" target="_self" class="Mark">Delete</a> </li>
+        <li><a href="{%url 'Vacations'%}" target="_self">Vacations</a> </li>
+        
+        
+        <br>
+        <li  class="search">
+            <input type="text" id="search" size="20" maxlength="40" name="name" placeholder="Search an employee.." required>
+                <input type="image" src="{% static 'Images/icon.jpg'%}" onclick="set_searchitem()" width="22px" height="19px" class="searchbutton"  >
+             <br />
+      
+
+       </li>
+    </ul>
+     
+<h1 class="center" >Delete employee information   </h1>
+<div id="status"></div>
+
+<form class ="pad">
+<div name="ID"id ="pading">ID:
+    <form method="post">
+        <input type="text" id="id" name="search id" placeholder="Enter id..">
+        <span class="result"></span>
+        <input type="button"class="blue"onclick="search_delete()" name="submit id" value="Submit"></type>
+</div>
+<div name="Email"id ="pading">Id : <span id="Id"></span> </div>
+
+<div name="Name" id ="pading">Name : <span id="name"></span></div> 
+
+<div name="Email"id ="pading">Email : <span id="email"></span> </div>
+
+<div name="Address"id ="pading">Address : <span id="address"></span></div>
+
+
+<div name="Phone number"id ="pading">Phone number : <span id="number"></span></div>
+
+
+
+<div name="Gender"id ="pading">Gender : <span id="gender"></span></div>
+ 
+<div name="Martial status"id ="pading">Martial status : <span id="s"></span></div>
+
+
+<div name="number of available
+vacation days"id ="pading">number of available
+vacation days : <span id="available_days"></span> </div>
+
+<div id ="pading">number of actual approved
+vacation days : <span id="actual_days"></span> </div>
+<div id ="pading">Salary : <span id="salary"></span></div>
+<div id ="pading">Date of birth : <span id="dob"></span></div>
+<br>
+<br><br>
+<input type="submit" id="button"class="red" value="Delete employee information" onclick="return delete1()" disabled><br><br>
+</form>
+</body>
+</html> 

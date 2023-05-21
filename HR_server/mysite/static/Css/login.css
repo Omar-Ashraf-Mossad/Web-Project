@@ -1,0 +1,25 @@
+div{border: 1px solid rgb(235, 229, 229);
+    width: 600px;
+    height: 200px;
+    background-color: #efe5e668;
+    border-width: 5px;
+}
+
+.log{
+
+    
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: #8a333e;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+      
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}

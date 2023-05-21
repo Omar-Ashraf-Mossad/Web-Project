@@ -1,0 +1,36 @@
+body{
+background-color: #fff0e5;
+}
+#form
+{
+    border: solid black;
+    margin-top: 20px;
+    padding: 20px;
+    width:900px;
+    margin-left: 100px;
+    height:auto;
+    background-color:rgb(251, 247, 240);
+}
+#Id{
+    margin-left: 100px;
+}
+.ID{
+    margin-left: 100px;
+}
+.button{
+background-color: #8a333e;
+
+}
+button{
+    background-color: #8a333e;
+    
+    }
+#edit_info{
+    background-color: #8a333e;
+}
+
+.result
+{
+    color: darkred;
+    font-size: 14px;
+}

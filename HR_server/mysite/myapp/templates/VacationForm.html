@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    {%load static%}
+    <meta charset="UTF-8"/>
+    <meta name="description" content="HR website" />
+    <title> Vacation Form </title>
+    <link rel="stylesheet" href="{% static 'Css/VacationForm.css'%}">
+    <link rel="stylesheet" href="{% static 'Css/navigation.css'%}">
+    <link rel="stylesheet" href="{% static 'Css/button colors.css'%}">
+    <link rel= "stylesheet" href="{% static 'Css/Status.css'%}">
+    <script language="JavaScript" src="{% static 'java script/Search.js'%}">
+    </script>
+    <script language="JavaScript" src="{% static 'java script/request_handle.js'%}">
+    </script>
+    <script src="{% static 'java script/Validation.js'%}"></script>
+    <script src="{% static 'java script/forms.js'%}"> </script>
+</head>
+<body onload="form()">
+
+    <ul>
+        <li ><a href="{%url 'Home'%}" target="_self">Home</a> </li>
+        <li ><a href="{%url 'Add'%}" target="_self">Add</a> </li>
+        <li><a href="{%url 'Edit'%}" target="_self" >Edit</a> </li>
+        <li><a href="{%url 'Delete'%}" target="_self">Delete</a> </li>
+        <li><a href="{%url 'Vacations'%}" target="_self"target="_self" class="Mark">Vacations</a> </li>
+        
+        
+        <br>
+        <li  class="search">
+            <input type="text" id="search" size="20" maxlength="40" name="name" placeholder="Search an employee.." required>
+                <input type="image" src="{% static 'Images/icon.jpg'%}" onclick="set_searchitem()" width="22px" height="19px" class="searchbutton"  >
+             <br />
+      
+
+       </li>
+    </ul>
+
+    <h1 class="center" >Vacation Form </h1>
+    <div id="status"></div>
+    <div id="div"> 
+        <br>
+        ID:
+        <input type="number" id="id" disabled><span></span>
+        <br><br>
+         From Date:
+        <input type="date" name="input" id="from" > <span></span>
+        <br><br>
+        To date:
+        <input type="date" name="input" id="to"> <span></span>
+        <br><br>
+        Reason:
+        <br>
+        <textarea id="reason" name="input" rows="5" cols="100"></textarea><span></span>
+        <br><br>
+        <div class="red" id="fail"></div>
+        <form>
+            <button onclick="return create_request()">Submit</button>
+        </form>
+        <br>
+        </div>
+  
+<br>
+<br>
+<br><br> <br><br>
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/approveandreject.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    {%load static%}
+  <title> Submitted vacations </title>
+  <link rel="stylesheet" href="{% static 'Css/navigation.css'%}">
+  <link rel="stylesheet" href="{% static 'Css/button colors.css'%}">
+    <script language="JavaScript" src="{% static 'java script/request_handle.js'%}">
+    </script>
+    <script language="JavaScript" src="{% static 'java script/Search.js'%}">
+    </script>
+    <script language="JavaScript" src="{% static 'java script/submitted.js'%}">
+    </script>
+    <link rel="stylesheet" href="{% static 'Css/submettedVacation.css'%}">
+
+</head>
+    <body style="background-color:  #FFF0E5;" onload="check()">
+    </body>
+
+    <ul>
+        <li ><a href="{%url 'Home'%}" target="_self">Home</a> </li>
+        <li ><a href="{%url 'Add'%}" target="_self">Add</a> </li>
+        <li><a href="{%url 'Edit'%}" target="_self" >Edit</a> </li>
+        <li><a href="{%url 'Delete'%}" target="_self">Delete</a> </li>
+        <li><a href="{%url 'Vacations'%}" target="_self"target="_self" class="Mark">Vacations</a> </li>
+        
+        
+        <br>
+        <li  class="search">
+                    <input type="text" id="search" size="20" maxlength="40" name="name" placeholder="Search an employee.." required>
+                        <input type="image" src="{% static 'Images/icon.jpg'%}" onclick="set_searchitem()" width="22px" height="19px" class="searchbutton"  >
+                    <br />
+        </li>
+    </ul>
+<br>
+
+<h1 class="center">Recieved vacation requests</h1>
+<br>
+<div id="empty"></div>
+<div class="container" id="container">
+
+</div>
+</body></html>

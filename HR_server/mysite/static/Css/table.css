@@ -1,0 +1,14 @@
+table
+{
+    width: 100%;border: solid;border-collapse: collapse;
+}
+th
+{border: solid;}
+td
+{
+    border:solid;text-align: center;
+}
+td button
+{
+    float: right;
+}

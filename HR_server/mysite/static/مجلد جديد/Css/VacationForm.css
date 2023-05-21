@@ -1,0 +1,24 @@
+#div
+{
+    border: solid black;
+    margin-top: 20px;
+    padding: 10px;
+    width:900px;
+    margin-left: 160px;
+    height:auto;
+    background-color:rgb(251, 247, 240);
+}
+body
+{
+   background-color: #FFF0E5;
+}
+button
+{
+    float: left;
+    background-color:#8a333e;
+    color: white;
+}
+span
+{
+    color:darkred;
+}
